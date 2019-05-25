@@ -1,6 +1,6 @@
 command = ""
-stopped = False
 started = False
+stopped = True
 while True:
     command = input("\nWhat would you like the car to do?\nEnter 'help' for help or 'q' to quit\n ").lower()
     if command == "start":
@@ -11,12 +11,10 @@ while True:
             print('you started the car')
     elif command == "stop":
         if stopped:
-            print('im already pulled over i cant pull over any farther')
+            print('im stopped already')
         else:
-            stopped = True
-            print('we pulled over')
-            started = False
-            print('cant stop intil you start dumb ass')
+            stopped = False
+            print('We pulled over..')
     elif command == "go":
         print('we are moving the fuck out')
     elif command == "help":
@@ -34,3 +32,15 @@ quit - ditch this hot car and bail
         break
     else:
         print('i dont know what the fuck your saying dude?')
+
+import cheekycat
+
+def main():
+    cheekycat.cheekycat('My neck')
+    cheekycat.cheekycat('My back')
+    cheekycat.cheekycat('lick my pussy... get it?')
+    cheekycat.cheekycat('and my crack')
+    cheekycat.cheekycat('Goodbye!')
+
+if __name__ == '__main__':
+        main()
